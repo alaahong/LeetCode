@@ -2,7 +2,7 @@ package cn.ianzhang.No0001TwoSum;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
 
 /**
  * Created by Ian on 2015/12/25.

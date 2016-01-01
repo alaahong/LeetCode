@@ -1,6 +1,7 @@
 package cn.ianzhang.No0001TwoSum;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by Ian on 2015/12/25.
