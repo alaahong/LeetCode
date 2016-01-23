@@ -11,7 +11,24 @@ public class Solution {
     public boolean isAnagram(String s, String t) {
         return solutionViaCollection(s, t)  // solution 1
                 &&
-                solutionViaArray(s, t); // solution 2
+                solutionViaArray(s, t) // solution 2
+                &&
+                solutionViaJavaAPI(s, t); // solution 3
+    }
+
+    /**
+     * resolve as default method
+     *
+     * @param s
+     * @param t
+     * @return
+     */
+    private boolean solutionViaJavaAPI(String s, String t) {
+        char[] sArr = s.toCharArray();
+        char[] tArr = t.toCharArray();
+        Arrays.sort(sArr);
+        Arrays.sort(tArr);
+        return String.valueOf(sArr).equals(String.valueOf(tArr));
     }
 
     /**
