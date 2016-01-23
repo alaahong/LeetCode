@@ -38,4 +38,28 @@ public class MagicTreeNode {
         }
     }
 
+    public void printNodeValueLDR(TreeNode node, StringBuilder sb) {
+        if (node != null) {
+            printNodeValueLDR(node.left, sb);
+            sb.append(String.valueOf(node.val));
+            printNodeValueLDR(node.right, sb);
+        }
+    }
+
+    public void printNodeValueLDR(TreeNode node, StringBuilder sb, int level) {
+        if (node != null) {
+            printNodeValueLDR(node.left, sb, level + 1);
+            sb.append(level + String.valueOf(node.val));
+            printNodeValueLDR(node.right, sb, level + 2);
+        }
+    }
+
+    public void printNodeValueDLR(TreeNode node, StringBuilder sb, int level) {
+        if (node != null) {
+            sb.append(level + String.valueOf(node.val));
+            printNodeValueDLR(node.left, sb, level + 1);
+            printNodeValueDLR(node.right, sb, level + 2);
+        }
+    }
+
 }

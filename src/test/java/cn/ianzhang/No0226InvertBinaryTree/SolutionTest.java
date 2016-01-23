@@ -1,5 +1,6 @@
 package cn.ianzhang.No0226InvertBinaryTree;
 
+import cn.ianzhang.util.TreeNode.TreeNode;
 import org.junit.Test;
 
 /**
