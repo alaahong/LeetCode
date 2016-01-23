@@ -15,5 +15,6 @@ public class SolutionTest {
         assertEquals(1, s.titleToNumber("A"));
         assertEquals(27, s.titleToNumber("AA"));
         assertEquals(703, s.titleToNumber("AAA"));
+        assertEquals(704, s.titleToNumber("AAB"));
     }
 }

@@ -7,12 +7,8 @@ public class Solution {
     public int titleToNumber(String s) {
         int result = 0;
         String t = s.trim().toUpperCase();
-        for (int i = t.length() - 1; i >= 0; i--) {
-            if (i == t.length() - 1) {
-                result = result + ((int) t.charAt(i)) - 65 + 1;
-            } else {
-                result = result + ((int) t.charAt(i) - 65 + 1) * (int) Math.pow(26, t.length() - 1 - i);
-            }
+        for (int i = 0; i < s.length(); i++) {
+            result = ((int) t.charAt(i) - 65 + 1) + result * 26;
         }
         return result;
     }
