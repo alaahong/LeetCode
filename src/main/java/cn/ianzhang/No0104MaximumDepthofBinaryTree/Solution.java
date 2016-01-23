@@ -4,6 +4,8 @@ package cn.ianzhang.No0104MaximumDepthofBinaryTree;
  * Created by Ian on 2016/1/20.
  */
 
+import cn.ianzhang.util.TreeNode.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

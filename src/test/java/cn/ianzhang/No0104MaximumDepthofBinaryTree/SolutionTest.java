@@ -1,5 +1,6 @@
 package cn.ianzhang.No0104MaximumDepthofBinaryTree;
 
+import cn.ianzhang.util.TreeNode.TreeNode;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
